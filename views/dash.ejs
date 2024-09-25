@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <title>Login</title>
+</head>
+<body>
+    <div class="">
+        <header class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-blue-900 md:mx-auto md:flex-row md:items-center">
+          <a href="#" class="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black">
+            E-Phar
+          </a>
+          <input type="checkbox" class="peer hidden" id="navbar-open" />
+          <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+            <span class="sr-only">Toggle Navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+          <nav aria-label="Header Navigation" class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+            <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+              <li class="font-bold md:mr-12"><a href="#">Medicament en demande</a></li>
+              <li class="md:mr-12"><a href="#">Liste Pharmacie</a></li>
+              <li class="md:mr-12"><a href="#">contact</a></li>
+              <li class="md:mr-12">
+                <button class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">compte</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      
+        <div class="mx-auto h-full px-4 py-10 sm:max-w-xl md:max-w-full md:px-24 md:py-36 lg:max-w-screen-xl lg:px-8">
+          <div class="flex flex-col items-center justify-between lg:flex-row">
+            <div class="">
+              <div class="lg:max-w-xl lg:pr-5">
+                <h2 class="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-blue-600 sm:text-8xl">
+                  Ton medoc  <br />
+                  à
+                  <span class="my-1 inline-block border-b-8 border-blue-600 font-bold text-blue-600"> la poche </span>
+                </h2>
+                <p class="text-base text-gray-700">Faites votre demande de vos medicament et recevez la disponibilité et faites vous livrer par une pharmacie.</p>
+              </div>
+              <div class="mt-10 flex flex-col items-center md:flex-row">
+                <a href="/demande" class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-blue-700 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800">Demander </a>
+                <!-- <a href="/" aria-label="" class="underline-offset-2 inline-flex items-center font-semibold text-blue-600 underline transition-colors duration-200 hover:underline">Watch how it works</a> -->
+              </div>
+              
+            </div>
+            <div class="relative hidden lg:ml-32 lg:block lg:w-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto my-6 h-10 w-10 animate-bounce rounded-full bg-blue-50 p-2 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+              </svg>
+              <div class="w-fit rounded-[6rem] mx-auto overflow-hidden rounded-tl-none rounded-br-none bg-orange-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="absolute -left-10 -top-20 h-28 w-28 rounded-xl bg-white text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-0 -bottom-20 h-28 w-28 rounded-xl bg-white text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" />
+                </svg>
+                <img class="-mb-20 w-80 h-80" src="/image/phar.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8"> 
+          <!-- Heading -->
+          <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Liste Produits</h2>
+      
+            <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus molestias explicabo.</p>
+          </div>
+          <!-- /Heading -->
+          <div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+            <!-- Article -->
+            <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
+              <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                <img src="https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+              </a>
+      
+              <div class="flex flex-col gap-2">
+                <span class="text-sm text-gray-400">April 2, 2022</span>
+      
+                <h2 class="text-xl font-bold text-gray-800">
+                  <a href="#" class="transition duration-100 hover:text-rose-500 active:text-rose-600">The Pines and the Mountains</a>
+                </h2>
+      
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus molestias explicabo.</p>
+      
+                <div>
+                  <a href="#" class="font-semibold text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">Read more</a>
+                </div>
+              </div>
+            </article>
+            <!-- /Article -->
+            <!-- Article -->
+            <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
+              <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+              </a>
+      
+              <div class="flex flex-col gap-2">
+                <span class="text-sm text-gray-400">April 2, 2022</span>
+      
+                <h2 class="text-xl font-bold text-gray-800">
+                  <a href="#" class="transition duration-100 hover:text-rose-500 active:text-rose-600">The Coding Mania</a>
+                </h2>
+      
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus molestias explicabo.</p>
+      
+                <div>
+                  <a href="#" class="font-semibold text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">Read more</a>
+                </div>
+              </div>
+            </article>
+            <!-- /Article -->
+            <!-- Article -->
+            <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
+              <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                <img src="https://images.unsplash.com/photo-1496395031280-4201b0e022ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+              </a>
+      
+              <div class="flex flex-col gap-2">
+                <span class="text-sm text-gray-400">April 2, 2022</span>
+      
+                <h2 class="text-xl font-bold text-gray-800">
+                  <a href="#" class="transition duration-100 hover:text-rose-500 active:text-rose-600">Architectural Warfare</a>
+                </h2>
+      
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus molestias explicabo.</p>
+      
+                <div>
+                  <a href="#" class="font-semibold text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">Read more</a>
+                </div>
+              </div>
+            </article>
+            <!-- /Article -->
+            <!-- Article -->
+            <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
+              <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                <img src="https://images.unsplash.com/photo-1510081887155-56fe96846e71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+              </a>
+      
+              <div class="flex flex-col gap-2">
+                <span class="text-sm text-gray-400">April 2, 2022</span>
+      
+                <h2 class="text-xl font-bold text-gray-800">
+                  <a href="#" class="transition duration-100 hover:text-rose-500 active:text-rose-600">Blues in Architechture</a>
+                </h2>
+      
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus molestias explicabo.</p>
+      
+                <div>
+                  <a href="#" class="font-semibold text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">Read more</a>
+                </div>
+              </div>
+            </article>
+            <!-- /Article -->
+          </div>
+        </div>
+      </section>
+      
+      
+</body>
+</html>
